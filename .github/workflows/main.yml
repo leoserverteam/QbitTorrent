@@ -7,9 +7,10 @@ on:
 
 jobs:
   call-deploy:
-    uses: leoserverteam/DevOpsTemplates/.github/workflows/onlycompose.yml@main
+    uses: leoserverteam/DevOpsTemplates/.github/workflows/deploy-with-configs.yml@main
     with:
       project_name: "QbiTorrent"
+      config_paths: config
 
   call-nginx:
     uses: leoserverteam/DevOpsTemplates/.github/workflows/deploynginx.yml@main
